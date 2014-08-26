@@ -12,7 +12,9 @@
         }
     ],
     "require": {
-        "guzzle/guzzle": "~3.0"
+        "guzzlehttp/guzzle": "~4.0",
+        "guzzlehttp/guzzle-services": "~0.3", 
+        "guzzlehttp/log-subscriber": "@stable"
     },
     "require-dev": {
         "phpunit/phpunit": "~3.7",
