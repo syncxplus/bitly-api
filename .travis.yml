@@ -17,3 +17,10 @@ install:
   - composer install --prefer-dist
 
 script: bin/phpunit
+
+env:
+  global:
+    - secure: "jLeBWhlYZqc5aXAxtUd+xn4SN4sTacqs/mrrX//QMLld3JnXAuweFI1rlJseI0n3sCjqQeDiHlKtwqdnIMO+iRssBkBUQJsjMOZZZn2RVGqyCh+/Xa4lSEp3uLTdog0EoRS8XA7GraSPC/kT1swANkgJhRI/EdwvpQdcpiFROdk="
+
+before_install:
+  - composer config github-oauth.github.com $GITHUB_TOKEN
